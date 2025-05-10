@@ -33,9 +33,9 @@ namespace LibraryManagementSystem.Service
 		{
 			var books = repo.LoadBooks();
 			if (!string.IsNullOrEmpty(title))
-				books = books.Where(b => b.Title.Contains(title, StringComparison.OrdinalIgnoreCase)).ToList();
+				books = books.Where(b => b.Title.Contains(title, StringComparison.CurrentCultureIgnoreCase)).ToList();
 			if (!string.IsNullOrEmpty(author))
-				books = books.Where(b => b.Author.Contains(author, StringComparison.OrdinalIgnoreCase)).ToList();
+				books = books.Where(b => b.Author.Contains(author, StringComparison.CurrentCultureIgnoreCase)).ToList();
 			return books;
 		}
 
