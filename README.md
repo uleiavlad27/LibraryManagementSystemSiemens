@@ -30,7 +30,7 @@ To successfully run the application, you must have the following software instal
 
 1. Clone the Repository
    
-   '''
+   ```
    git clone [repository-url]
    cd LibraryManagementSystem
    ```
